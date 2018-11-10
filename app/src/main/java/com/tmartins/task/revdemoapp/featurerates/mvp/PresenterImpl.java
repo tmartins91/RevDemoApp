@@ -64,7 +64,7 @@ public class PresenterImpl implements RatesActivityContract.Presenter {
 
                     @Override
                     public void onError(Throwable e) {
-                        Timber.i(String.format("RatesData response with error... Message: %s", e.getMessage()));
+                        Timber.i("RatesData response with error... Message: %s", e.getMessage());
                         mView.showError("");
                         mView.hideProgress();
                         loadRates(currentBaseCurrency);
